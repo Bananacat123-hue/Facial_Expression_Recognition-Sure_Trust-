@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h2>Detected Emotion: {{ emotion }}</h2>
+
+    <h4>Uploaded Image:</h4>
+    <img src="{{ url_for('static', filename=image_path) }}" width="300">
+
+    <h4>Corresponding Emoji:</h4>
+    <img src="{{ url_for('static', filename=emoji_path) }}" width="100">
+
+    <br><br>
+    <a href="/">Go Back</a>
+</body>
+</html>
